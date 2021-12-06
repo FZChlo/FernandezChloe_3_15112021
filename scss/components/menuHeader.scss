@@ -1,0 +1,52 @@
+$linear-gradient: linear-gradient( to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+$color-headerBloc: #f2f2f2;
+$color-searchBloc: #dcdcdc;
+@mixin alignCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    @include alignCenter;
+    flex-direction: column;
+    .logo,
+    img {
+        width: 90%;
+    }
+}
+
+#blocHead {
+    @include alignCenter;
+    flex-direction: column;
+    border: 2px solid $color-headerBloc;
+    background-color: $color-headerBloc;
+    width: 50%;
+    height: auto;
+    padding-bottom: 30px;
+    .searchSection {
+        @include alignCenter;
+        border: 2px solid $color-searchBloc;
+        background-color: $color-searchBloc;
+        width: 100%;
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        #search {
+            background-color: $color-searchBloc;
+            border: none;
+            color: black;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    }
+    #explore {
+        color: white;
+        border: 2px solid $color-headerBloc;
+        background-image: $linear-gradient;
+        border-radius: 40px;
+        width: 40%;
+        height: 50px;
+        font-weight: bold;
+    }
+}

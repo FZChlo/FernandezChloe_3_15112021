@@ -1,0 +1,27 @@
+#function {
+    @include alignCenter;
+    flex-direction: column;
+}
+
+.bloc {
+    width: 50%;
+    height: auto;
+    border: 2px solid $color-headerBloc;
+    border-radius: 20px;
+    box-shadow: 8px 8px 12px #cfcdcd;
+    background-color: $color-headerBloc;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.restaurents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5em;
+    img {
+        width: 50%;
+        height: 50%;
+    }
+}

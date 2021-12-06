@@ -1,0 +1,92 @@
+h1,
+h6 {
+  font-family: "Shrikhand", sans-serif;
+  color: black;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header .logo,
+header img {
+  width: 90%;
+}
+
+#blocHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #f2f2f2;
+  background-color: #f2f2f2;
+  width: 50%;
+  height: auto;
+  padding-bottom: 30px;
+}
+#blocHead .searchSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #dcdcdc;
+  background-color: #dcdcdc;
+  width: 100%;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#blocHead .searchSection #search {
+  background-color: #dcdcdc;
+  border: none;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+#blocHead #explore {
+  color: white;
+  border: 2px solid #f2f2f2;
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  border-radius: 40px;
+  width: 40%;
+  height: 50px;
+  font-weight: bold;
+}
+
+#function {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bloc {
+  width: 50%;
+  height: auto;
+  border: 2px solid #f2f2f2;
+  border-radius: 20px;
+  box-shadow: 8px 8px 12px #cfcdcd;
+  background-color: #f2f2f2;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.restaurents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5em;
+}
+.restaurents img {
+  width: 50%;
+  height: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */

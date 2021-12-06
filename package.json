@@ -1,0 +1,20 @@
+{
+    "name": "FernandezChloe_3_15112021",
+    "version": "1.0.0",
+    "description": "Conception of mobile website for a restaurent",
+    "main": "index.js",
+    "scripts": {
+        "compile": "sass scss/main.scss css/style.css",
+        "watch": "sass --watch scss/main.scss:css/style.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/FZChlo/FernandezChloe_3_15112021.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "sass": "^1.44.0"
+    }
+}
