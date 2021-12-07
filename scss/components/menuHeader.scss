@@ -1,6 +1,6 @@
 $linear-gradient: linear-gradient( to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-$color-headerBloc: #f2f2f2;
-$color-searchBloc: #dcdcdc;
+$color-lightGrey: #f2f2f2;
+$color-shadowGrey: #dcdcdc;
 @mixin alignCenter {
     display: flex;
     justify-content: center;
@@ -19,21 +19,21 @@ header {
 #blocHead {
     @include alignCenter;
     flex-direction: column;
-    border: 2px solid $color-headerBloc;
-    background-color: $color-headerBloc;
+    border: 2px solid $color-lightGrey;
+    background-color: $color-lightGrey;
     width: 50%;
     height: auto;
     padding-bottom: 30px;
     .searchSection {
         @include alignCenter;
-        border: 2px solid $color-searchBloc;
-        background-color: $color-searchBloc;
+        border: 2px solid $color-shadowGrey;
+        background-color: $color-shadowGrey;
         width: 100%;
         height: auto;
         padding-top: 15px;
         padding-bottom: 15px;
         #search {
-            background-color: $color-searchBloc;
+            background-color: $color-shadowGrey;
             border: none;
             color: black;
             font-weight: bold;
@@ -42,7 +42,7 @@ header {
     }
     #explore {
         color: white;
-        border: 2px solid $color-headerBloc;
+        border: 2px solid $color-lightGrey;
         background-image: $linear-gradient;
         border-radius: 40px;
         width: 40%;

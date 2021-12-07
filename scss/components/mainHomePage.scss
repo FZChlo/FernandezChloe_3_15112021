@@ -1,27 +1,52 @@
-#function {
+main {
     @include alignCenter;
     flex-direction: column;
 }
 
-.bloc {
+#function {
+    padding-top: 20px;
     width: 50%;
-    height: auto;
-    border: 2px solid $color-headerBloc;
-    border-radius: 20px;
-    box-shadow: 8px 8px 12px #cfcdcd;
-    background-color: $color-headerBloc;
-    margin-bottom: 30px;
-    text-align: center;
+    .bloc {
+        width: 100%;
+        height: auto;
+        border: 2px solid $color-lightGrey;
+        border-radius: 20px;
+        box-shadow: 8px 8px 12px #cfcdcd;
+        background-color: $color-lightGrey;
+        margin-bottom: 30px;
+        text-align: center;
+    }
 }
 
-.restaurents {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    line-height: 1.5em;
-    img {
-        width: 50%;
-        height: 50%;
+#etablissements {
+    width: 50%;
+    height: auto;
+    border: 2px solid $color-lightGrey;
+    background-color: $color-lightGrey;
+    h2 {
+        text-align: left;
+        margin-left: 15px;
+    }
+    a {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        flex-direction: column;
+        border: 2px solid $color-lightGrey;
+        background-color: white;
+        border-radius: 20px;
+        margin-top: 20px;
+        text-decoration: none;
+        text-align: left;
+        h3,
+        p {
+            margin-left: 15px;
+            color: black;
+        }
+        img {
+            border-radius: 20px 20px 0 0;
+            width: 100%;
+            height: 20%;
+        }
     }
 }
