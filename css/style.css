@@ -14,8 +14,7 @@ header {
   align-items: center;
   flex-direction: column;
 }
-header .logo,
-header img {
+header .logo {
   width: 90%;
 }
 
@@ -58,6 +57,30 @@ header img {
   font-weight: bold;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer #Ohmyfood {
+  width: 50%;
+  height: auto;
+  border: 2px solid #353535;
+  background-color: #353535;
+}
+footer #Ohmyfood h3 {
+  margin-left: 15px;
+  font-style: italic;
+}
+footer #Ohmyfood p {
+  margin-left: 20px;
+  color: white;
+}
+footer #Ohmyfood a {
+  color: white;
+  text-decoration: none;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -70,6 +93,9 @@ main {
   width: 50%;
 }
 #function .bloc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: auto;
   border: 2px solid #f2f2f2;
@@ -79,38 +105,77 @@ main {
   margin-bottom: 30px;
   text-align: center;
 }
+#function .bloc :nth-child(2) {
+  flex: 1;
+}
+#function .bloc i {
+  margin-left: 50px;
+}
+#function .bloc i:hover {
+  color: #9356dc;
+}
+#function .bloc:hover {
+  background-color: #dfb7ff;
+}
 
 #etablissements {
   width: 50%;
-  height: auto;
   border: 2px solid #f2f2f2;
   background-color: #f2f2f2;
 }
 #etablissements h2 {
-  text-align: left;
-  margin-left: 15px;
+  margin-left: 20px;
 }
-#etablissements a {
+#etablissements .restaurent {
   display: flex;
   justify-content: center;
-  width: 90%;
+  align-items: center;
+  width: 100%;
+}
+#etablissements .restaurent a {
+  display: flex;
+  justify-content: center;
+  width: 800px;
   flex-direction: column;
   border: 2px solid #f2f2f2;
   background-color: white;
   border-radius: 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
   text-decoration: none;
   text-align: left;
 }
-#etablissements a h3,
-#etablissements a p {
+#etablissements .restaurent a .titleHeart {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: black;
+  margin-right: 30px;
+}
+#etablissements .restaurent a .titleHeart i {
+  margin-top: 30px;
+}
+#etablissements .restaurent a .titleHeart i:active, #etablissements .restaurent a .titleHeart i:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  color: #9356dc;
+}
+#etablissements .restaurent a h3,
+#etablissements .restaurent a p {
   margin-left: 15px;
   color: black;
 }
-#etablissements a img {
+#etablissements .restaurent a img {
   border-radius: 20px 20px 0 0;
   width: 100%;
-  height: 20%;
+  height: 500px;
+}
+
+header .imgResto img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

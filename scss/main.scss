@@ -1,7 +1,9 @@
 @import "./Base/typography.scss";
-@import "./Pages/header.scss";
-@import "./Pages/footer.scss";
+@import "./Components/header.scss";
+@import "./Components/footer.scss";
+@import "./Components/spinner.scss";
 @import "./Pages/mainHomePage.scss";
 @import "./Pages/bodyDesktop.scss";
-@import "./utils/breakpoint.scss";
-@import "./utils/variables";
+@import "./Pages/mainRestaurents.scss";
+@import "./Utils/breakpoint.scss";
+@import "./Utils/variables.scss";

@@ -1,0 +1,8 @@
+header {
+    .imgResto {
+        img {
+            @include alignCenter;
+            width: 50%;
+        }
+    }
+}

@@ -10,8 +10,7 @@ $color-shadowGrey: #dcdcdc;
 header {
     @include alignCenter;
     flex-direction: column;
-    .logo,
-    img {
+    .logo {
         width: 90%;
     }
 }
