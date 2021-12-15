@@ -94,8 +94,8 @@ main {
 }
 #function .bloc {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
   border: 2px solid #f2f2f2;
