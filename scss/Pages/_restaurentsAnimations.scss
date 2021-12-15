@@ -1,0 +1,48 @@
+.imgResto {
+    img {
+        width: 50%;
+    }
+}
+
+.entreesMenu {
+    animation: fadein 4s ease-in-out;
+}
+
+.platsMenu {
+    animation: fadein 6s ease-in-out;
+}
+
+.dessertsMenu {
+    animation: fadein 8s ease-in-out;
+}
+
+.icon {
+    @include icon;
+}
+
+.entree {
+    @include elements;
+}
+
+.plat {
+    @include elements;
+}
+
+.dessert {
+    @include elements;
+}
+
+.blocPrix {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.5em;
+}
+
+.blocPrix p {
+    margin: 0;
+    margin-right: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
