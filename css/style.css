@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Roboto", sans-serif;
   color: black;
@@ -6,8 +7,23 @@ body h1,
 body h6 {
   font-family: "Shrikhand", sans-serif;
   color: black;
+  font-style: italic;
+}
+body h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+body h2 {
+  font-size: 24px;
+}
+body h3 {
+  font-size: 24px;
+}
+body p {
+  font-size: 18px;
 }
 
+/* La fonction scaleY() modifie l'ordonnée de chaque sommet de l'élément avec un facteur multiplicateur */
 @keyframes grow {
   0%, 100% {
     -webkit-transform: scaleY(1);
@@ -18,6 +34,7 @@ body h6 {
     transform: scaleY(1.8);
   }
 }
+/* La fonction rotate applique une rotation autour d'un point */
 @keyframes rotate {
   from {
     -webkit-transform: rotate(0deg);
@@ -26,6 +43,7 @@ body h6 {
     -webkit-transform: rotate(360deg);
   }
 }
+/* La propriété opacity définit la transparence d'un élément */
 @keyframes loader {
   0% {
     opacity: 1;
@@ -98,11 +116,14 @@ header .logo {
 #blocHead #explore {
   color: white;
   border: 2px solid #f2f2f2;
-  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background-image: linear-gradient(to left, #9356dc, #ff79da);
   border-radius: 40px;
-  width: 40%;
   height: 50px;
   font-weight: bold;
+  width: 40%;
+}
+#blocHead #explore:hover {
+  opacity: 0.5;
 }
 
 footer {
@@ -129,6 +150,50 @@ footer #Ohmyfood a {
   text-decoration: none;
 }
 
+.spinner {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #240229;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1), 10px 10px 10px rgba(0, 0, 0, 0.4), inset -5px -5px 5px rgba(255, 255, 255, 0.2), inset 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.spinner:before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  z-index: 10;
+  background: #dcdcdc;
+  border-radius: 50%;
+  border: 2px solid #240229;
+  box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.2), inset 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.spinner span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: linear-gradient(-225deg, #9356dc 0%, #ff4ff6 50%, #fca2f7 100%);
+  filter: blur(20px);
+  z-index: -1;
+  animation: animate 1s linear infinite;
+  animation-iteration-count: 3;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 main {
   display: flex;
   justify-content: center;
@@ -180,7 +245,7 @@ main {
   align-items: center;
   width: 100%;
 }
-#etablissements .restaurent a {
+#etablissements .restaurent .abcd {
   display: flex;
   justify-content: center;
   width: 800px;
@@ -193,30 +258,88 @@ main {
   text-decoration: none;
   text-align: left;
 }
-#etablissements .restaurent a .titleHeart {
+#etablissements .restaurent .abcd .titleHeart {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
   color: black;
   margin-right: 30px;
 }
-#etablissements .restaurent a .titleHeart i {
+#etablissements .restaurent .abcd .titleHeart i {
+  cursor: pointer;
   margin-top: 30px;
 }
-#etablissements .restaurent a .titleHeart i:active, #etablissements .restaurent a .titleHeart i:hover {
+#etablissements .restaurent .abcd .titleHeart i:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
   color: #9356dc;
 }
-#etablissements .restaurent a h3,
-#etablissements .restaurent a p {
+#etablissements .restaurent .abcd .titleHeart i:active {
+  color: #9356dc;
+}
+#etablissements .restaurent .abcd h3,
+#etablissements .restaurent .abcd p {
   margin-left: 15px;
   color: black;
 }
-#etablissements .restaurent a img {
+#etablissements .restaurent .abcd img {
   border-radius: 20px 20px 0 0;
   width: 100%;
-  height: 500px;
+  height: 300px;
+}
+
+body form {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+}
+body form .btnAccueil {
+  color: white;
+  border: 2px solid #f2f2f2;
+  background-image: linear-gradient(to left, #9356dc, #ff79da);
+  border-radius: 40px;
+  height: 50px;
+  font-weight: bold;
+  width: 100%;
+}
+body form .btnAccueil:hover {
+  opacity: 0.5;
+}
+body form .btnCommander {
+  color: white;
+  border: 2px solid #f2f2f2;
+  background-image: linear-gradient(to left, #9356dc, #ff79da);
+  border-radius: 40px;
+  height: 50px;
+  font-weight: bold;
+  width: 100%;
+}
+body form .btnCommander:hover {
+  opacity: 0.5;
+}
+body .imgResto p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+}
+body .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  border: 2px solid #dcdcdc;
+  border-radius: 60px 60px 0 0;
+  box-shadow: 8px 8px 12px #cfcdcd;
+  background-color: #f2f2f2;
+  margin-top: -80px;
+}
+body .menu h2 {
+  text-decoration: underline #99e2d0 5px;
+}
+body .menu h3 {
+  margin-top: 10px;
 }
 
 .imgResto img {
@@ -225,14 +348,17 @@ main {
 
 .entreesMenu {
   animation: fadein 4s ease-in-out;
+  width: 90%;
 }
 
 .platsMenu {
   animation: fadein 6s ease-in-out;
+  width: 90%;
 }
 
 .dessertsMenu {
   animation: fadein 8s ease-in-out;
+  width: 90%;
 }
 
 .icon {
@@ -241,7 +367,7 @@ main {
   align-items: center;
   background-color: #99e2d0;
   width: 30px;
-  height: 63px;
+  height: 80px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: absolute;

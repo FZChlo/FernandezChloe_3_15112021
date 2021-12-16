@@ -1,0 +1,39 @@
+body {
+    form {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        .btnAccueil {
+            @include button;
+            width: 100%;
+        }
+        .btnCommander {
+            @include button;
+            width: 100%;
+        }
+    }
+    .imgResto {
+        p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: fit-content;
+        }
+    }
+    .menu {
+        @include alignCenter;
+        flex-direction: column;
+        width: 50%;
+        border: 2px solid $color-shadowGrey;
+        border-radius: 60px 60px 0 0;
+        box-shadow: 8px 8px 12px #cfcdcd;
+        background-color: $color-lightGrey;
+        margin-top: -80px;
+        h2 {
+            text-decoration: underline $color-tertiary 5px;
+        }
+        h3 {
+            margin-top: 10px;
+        }
+    }
+}
