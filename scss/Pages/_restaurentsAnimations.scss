@@ -10,12 +10,12 @@
 }
 
 .platsMenu {
-    animation: fadein 6s ease-in-out;
+    animation: fadein 8s ease-in-out;
     width: 90%;
 }
 
 .dessertsMenu {
-    animation: fadein 8s ease-in-out;
+    animation: fadein 12s ease-in-out;
     width: 90%;
 }
 
@@ -25,14 +25,26 @@
 
 .entree {
     @include elements;
+    h3 {
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
 }
 
 .plat {
     @include elements;
+    h3 {
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
 }
 
 .dessert {
     @include elements;
+    h3 {
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
 }
 
 .blocPrix {

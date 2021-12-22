@@ -17,10 +17,10 @@ body h2 {
   font-size: 24px;
 }
 body h3 {
-  font-size: 24px;
+  font-size: 18px;
 }
 body p {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 /* La fonction scaleY() modifie l'ordonnée de chaque sommet de l'élément avec un facteur multiplicateur */
@@ -81,7 +81,12 @@ header {
   flex-direction: column;
 }
 header .logo {
-  width: 90%;
+  width: 50%;
+}
+@media screen and (min-width: 1024px) {
+  header .logo {
+    width: 90%;
+  }
 }
 
 #blocHead {
@@ -91,9 +96,15 @@ header .logo {
   flex-direction: column;
   border: 2px solid #f2f2f2;
   background-color: #f2f2f2;
-  width: 50%;
+  width: 100%;
   height: auto;
   padding-bottom: 30px;
+}
+@media screen and (min-width: 1024px) {
+  #blocHead {
+    width: 50%;
+    text-align: center;
+  }
 }
 #blocHead .searchSection {
   display: flex;
@@ -132,10 +143,15 @@ footer {
   align-items: center;
 }
 footer #Ohmyfood {
-  width: 50%;
+  width: 100%;
   height: auto;
   border: 2px solid #353535;
   background-color: #353535;
+}
+@media screen and (min-width: 1024px) {
+  footer #Ohmyfood {
+    width: 50%;
+  }
 }
 footer #Ohmyfood h3 {
   margin-left: 15px;
@@ -150,50 +166,6 @@ footer #Ohmyfood a {
   text-decoration: none;
 }
 
-.spinner {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  border: 2px solid #240229;
-  overflow: hidden;
-  border-radius: 50%;
-  box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1), 10px 10px 10px rgba(0, 0, 0, 0.4), inset -5px -5px 5px rgba(255, 255, 255, 0.2), inset 10px 10px 10px rgba(0, 0, 0, 0.4);
-}
-
-.spinner:before {
-  content: "";
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  right: 25px;
-  bottom: 25px;
-  z-index: 10;
-  background: #dcdcdc;
-  border-radius: 50%;
-  border: 2px solid #240229;
-  box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.2), inset 3px 3px 5px rgba(0, 0, 0, 0.5);
-}
-
-.spinner span {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-image: linear-gradient(-225deg, #9356dc 0%, #ff4ff6 50%, #fca2f7 100%);
-  filter: blur(20px);
-  z-index: -1;
-  animation: animate 1s linear infinite;
-  animation-iteration-count: 3;
-}
-
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 main {
   display: flex;
   justify-content: center;
@@ -203,7 +175,12 @@ main {
 
 #function {
   padding-top: 20px;
-  width: 50%;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  #function {
+    width: 50%;
+  }
 }
 #function .bloc {
   display: flex;
@@ -232,9 +209,14 @@ main {
 }
 
 #etablissements {
-  width: 50%;
+  width: 100%;
   border: 2px solid #f2f2f2;
   background-color: #f2f2f2;
+}
+@media screen and (min-width: 1024px) {
+  #etablissements {
+    width: 50%;
+  }
 }
 #etablissements h2 {
   margin-left: 20px;
@@ -255,15 +237,16 @@ main {
   border-radius: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  text-decoration: none;
   text-align: left;
 }
 #etablissements .restaurent .abcd .titleHeart {
   display: flex;
   justify-content: space-between;
-  text-decoration: none;
   color: black;
   margin-right: 30px;
+}
+#etablissements .restaurent .abcd .titleHeart a {
+  text-decoration: none;
 }
 #etablissements .restaurent .abcd .titleHeart i {
   cursor: pointer;
@@ -274,9 +257,6 @@ main {
   transform: scale(1.3);
   color: #9356dc;
 }
-#etablissements .restaurent .abcd .titleHeart i:active {
-  color: #9356dc;
-}
 #etablissements .restaurent .abcd h3,
 #etablissements .restaurent .abcd p {
   margin-left: 15px;
@@ -284,8 +264,14 @@ main {
 }
 #etablissements .restaurent .abcd img {
   border-radius: 20px 20px 0 0;
-  width: 100%;
-  height: 300px;
+  width: 350px;
+  height: 200px;
+}
+@media screen and (min-width: 1024px) {
+  #etablissements .restaurent .abcd img {
+    width: 100%;
+    height: 300px;
+  }
 }
 
 body form {
@@ -300,10 +286,15 @@ body form .btnAccueil {
   border-radius: 40px;
   height: 50px;
   font-weight: bold;
-  width: 100%;
+  width: 70%;
 }
 body form .btnAccueil:hover {
   opacity: 0.5;
+}
+@media screen and (min-width: 1024px) {
+  body form .btnAccueil {
+    width: 100%;
+  }
 }
 body form .btnCommander {
   color: white;
@@ -312,34 +303,67 @@ body form .btnCommander {
   border-radius: 40px;
   height: 50px;
   font-weight: bold;
-  width: 100%;
+  width: 70%;
 }
 body form .btnCommander:hover {
   opacity: 0.5;
 }
-body .imgResto p {
+@media screen and (min-width: 1024px) {
+  body form .btnCommander {
+    width: 100%;
+  }
+}
+body .imgResto {
   display: flex;
   justify-content: center;
   align-items: center;
   height: fit-content;
+}
+body .imgResto img {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  body .imgResto img {
+    width: 50%;
+  }
 }
 body .menu {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   border: 2px solid #dcdcdc;
   border-radius: 60px 60px 0 0;
   box-shadow: 8px 8px 12px #cfcdcd;
   background-color: #f2f2f2;
-  margin-top: -80px;
+  margin-top: -50px;
+}
+@media screen and (min-width: 1024px) {
+  body .menu {
+    width: 50%;
+    margin-top: -180px;
+  }
 }
 body .menu h2 {
   text-decoration: underline #99e2d0 5px;
 }
 body .menu h3 {
   margin-top: 10px;
+  font-size: 18px;
+}
+@media screen and (min-width: 1024px) {
+  body .menu h3 {
+    font-size: 24px;
+  }
+}
+body .menu p {
+  font-size: 14px;
+}
+@media screen and (min-width: 375px) {
+  body .menu p {
+    font-size: 18px;
+  }
 }
 
 .imgResto img {
@@ -352,12 +376,12 @@ body .menu h3 {
 }
 
 .platsMenu {
-  animation: fadein 6s ease-in-out;
+  animation: fadein 8s ease-in-out;
   width: 90%;
 }
 
 .dessertsMenu {
-  animation: fadein 8s ease-in-out;
+  animation: fadein 12s ease-in-out;
   width: 90%;
 }
 
@@ -405,6 +429,10 @@ body .menu h3 {
 .entree:hover .fa-check-circle {
   transform: rotate(360deg);
 }
+.entree h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 
 .plat {
   background-color: white;
@@ -429,6 +457,10 @@ body .menu h3 {
 .plat:hover .fa-check-circle {
   transform: rotate(360deg);
 }
+.plat h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 
 .dessert {
   background-color: white;
@@ -452,6 +484,10 @@ body .menu h3 {
 }
 .dessert:hover .fa-check-circle {
   transform: rotate(360deg);
+}
+.dessert h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .blocPrix {

@@ -2,7 +2,10 @@ header {
     @include alignCenter;
     flex-direction: column;
     .logo {
-        width: 90%;
+        width: 50%;
+        @include desktop {
+            width: 90%;
+        }
     }
 }
 
@@ -11,9 +14,13 @@ header {
     flex-direction: column;
     border: 2px solid $color-lightGrey;
     background-color: $color-lightGrey;
-    width: 50%;
+    width: 100%;
     height: auto;
     padding-bottom: 30px;
+    @include desktop {
+        width: 50%;
+        text-align: center;
+    }
     .searchSection {
         @include alignCenter;
         border: 2px solid $color-shadowGrey;

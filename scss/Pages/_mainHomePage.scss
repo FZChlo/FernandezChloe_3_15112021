@@ -5,7 +5,10 @@ main {
 
 #function {
     padding-top: 20px;
-    width: 50%;
+    width: 100%;
+    @include desktop {
+        width: 50%;
+    }
     .bloc {
          :nth-child(2) {
             flex: 1;
@@ -32,9 +35,12 @@ main {
 }
 
 #etablissements {
-    width: 50%;
+    width: 100%;
     border: 2px solid $color-lightGrey;
     background-color: $color-lightGrey;
+    @include desktop {
+        width: 50%;
+    }
     h2 {
         margin-left: 20px;
     }
@@ -53,23 +59,21 @@ main {
             border-radius: 20px;
             margin-top: 20px;
             margin-bottom: 20px;
-            text-decoration: none;
             text-align: left;
             .titleHeart {
                 display: flex;
                 justify-content: space-between;
-                text-decoration: none;
                 color: black;
                 margin-right: 30px;
+                a {
+                    text-decoration: none;
+                }
                 i {
                     cursor: pointer;
                     margin-top: 30px;
                     &:hover {
                         -webkit-transform: scale(1.3);
                         transform: scale(1.3);
-                        color: $color-primary;
-                    }
-                    &:active {
                         color: $color-primary;
                     }
                 }
@@ -81,8 +85,12 @@ main {
             }
             img {
                 border-radius: 20px 20px 0 0;
-                width: 100%;
-                height: 300px;
+                width: 350px;
+                height: 200px;
+                @include desktop {
+                    width: 100%;
+                    height: 300px;
+                }
             }
         }
     }

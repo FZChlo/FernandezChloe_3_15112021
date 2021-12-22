@@ -2,10 +2,13 @@ $fond-gris-footer: #353535;
 footer {
     @include alignCenter;
     #Ohmyfood {
-        width: 50%;
+        width: 100%;
         height: auto;
         border: 2px solid $fond-gris-footer;
         background-color: $fond-gris-footer;
+        @include desktop {
+            width: 50%;
+        }
         h3 {
             margin-left: 15px;
             font-style: italic;

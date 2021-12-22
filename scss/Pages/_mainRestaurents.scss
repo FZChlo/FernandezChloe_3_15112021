@@ -5,33 +5,57 @@ body {
         width: 400px;
         .btnAccueil {
             @include button;
-            width: 100%;
+            width: 70%;
+            @include desktop {
+                width: 100%;
+            }
         }
         .btnCommander {
             @include button;
-            width: 100%;
+            width: 70%;
+            @include desktop {
+                width: 100%;
+            }
         }
     }
     .imgResto {
-        p {
-            @include alignCenter;
-            height: fit-content;
+        @include alignCenter;
+        height: fit-content;
+        img {
+            width: 100%;
+            @include desktop {
+                width: 50%;
+            }
         }
     }
     .menu {
         @include alignCenter;
         flex-direction: column;
-        width: 50%;
+        width: 100%;
         border: 2px solid $color-shadowGrey;
         border-radius: 60px 60px 0 0;
         box-shadow: 8px 8px 12px #cfcdcd;
         background-color: $color-lightGrey;
-        margin-top: -80px;
+        margin-top: -50px;
+        @include desktop {
+            width: 50%;
+            margin-top: -180px;
+        }
         h2 {
             text-decoration: underline $color-tertiary 5px;
         }
         h3 {
             margin-top: 10px;
+            font-size: 18px;
+            @include desktop {
+                font-size: 24px;
+            }
+        }
+        p {
+            font-size: 14px;
+            @include mobile {
+                font-size: 18px;
+            }
         }
     }
 }
