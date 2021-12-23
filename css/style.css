@@ -166,6 +166,21 @@ footer #Ohmyfood a {
   text-decoration: none;
 }
 
+#loader {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  color: #9356dc;
+  background-color: #99e2d0;
+  z-index: 1000;
+  display: flex;
+  animation: loader 3s;
+  animation-fill-mode: forwards;
+}
+#loader span {
+  margin: auto;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -184,7 +199,6 @@ main {
 }
 #function .bloc {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
@@ -195,17 +209,25 @@ main {
   margin-bottom: 30px;
   text-align: center;
 }
-#function .bloc :nth-child(2) {
-  flex: 1;
+#function .bloc :nth-child(3) {
+  flex: 2;
 }
 #function .bloc i {
-  margin-left: 50px;
+  margin-right: 15px;
 }
 #function .bloc i:hover {
   color: #9356dc;
 }
 #function .bloc:hover {
   background-color: #dfb7ff;
+}
+#function .bloc .number {
+  border-radius: 50px;
+  padding: 5px 10px 5px 10px;
+  background-color: #9356dc;
+  color: white;
+  margin-left: -10px;
+  margin-right: 10px;
 }
 
 #etablissements {
