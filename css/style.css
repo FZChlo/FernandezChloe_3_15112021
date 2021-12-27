@@ -275,14 +275,14 @@ main {
   margin-bottom: 20px;
   text-align: left;
 }
+#etablissements .restaurent .abcd a {
+  text-decoration: none;
+}
 #etablissements .restaurent .abcd .titleHeart {
   display: flex;
   justify-content: space-between;
   color: black;
   margin-right: 30px;
-}
-#etablissements .restaurent .abcd .titleHeart a {
-  text-decoration: none;
 }
 #etablissements .restaurent .abcd .titleHeart i {
   cursor: pointer;
