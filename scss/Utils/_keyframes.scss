@@ -24,10 +24,7 @@
     }
 }
 
-
-/* La propriété opacity définit la transparence d'un élément */
-
-@keyframes loader {
+@keyframes load {
     0% {
         opacity: 1;
     }
@@ -57,5 +54,23 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+
+/*SPINNER*/
+
+@keyframes loader {
+    0% {
+        z-index: 1000;
+        opacity: 1;
+    }
+    95% {
+        z-index: 1000;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
     }
 }

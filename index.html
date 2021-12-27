@@ -6,22 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--Importation du Css-->
+    <!--.................Importation du Css.................-->
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
-    <!--Fontawesome-->
+    <!--..............Fontawesome.................-->
     <script src="https://kit.fontawesome.com/e94b4ac860.js" crossorigin="anonymous"></script>
 
     <title>Ohmyfood!</title>
 </head>
 
 <body>
-    <!--HEADER-->
+    <!--......................SPINNER................-->
+    <div id="loader">
+        <span><i class="fas fa-spinner fa-spin fa-10x"></i></span>
+    </div>
+    <!--....................HEADER........................-->
     <header>
-        <!--SPINNER-->
-        <div id="loader">
-            <span><i class="fas fa-spinner fa-spin fa-10x"></i></span>
-        </div>
-        <!--Logo-->
+
+        <!--.................Logo.................-->
         <div class="Logo">
 
             <img src="./assets/ohmyfood.png" alt="Logo Ohmyfood!" />
@@ -29,12 +30,12 @@
         </div>
 
         <section id="blocHead">
-            <!--Recherche-->
+            <!--..................Recherche......................-->
             <div class="searchSection">
                 <div class="ping"><i class="fas fa-map-marker-alt"></i></div>
                 <input type="text" id="search" name="search" placeholder=" Paris, Belleville" />
             </div>
-            <!--Titre, sous titre et bouton-->
+            <!--..................Titre, sous titre et bouton.................-->
             <h1>Reservez le menu qui vous convient</h1>
             <p>
                 Découvrez des restaurants d'exception, séléctionnés par nos soins.
@@ -43,9 +44,9 @@
         </section>
     </header>
 
-    <!--MAIN-->
+    <!--..................MAIN..................-->
     <main>
-        <!--Bloc fonctionnement-->
+        <!--.............Bloc fonctionnement................-->
         <section id="function">
             <h2>Fonctionnement</h2>
             <div class="bloc 1">
@@ -64,7 +65,9 @@
                 <p>Dégustez au restaurant</p>
             </div>
         </section>
-        <!--Bloc restaurants-->
+
+
+        <!--................Bloc restaurants....................-->
         <section id="etablissements">
             <h2>Restaurants</h2>
 
@@ -72,6 +75,7 @@
                 <div class="abcd">
                     <a href="./laPaletteDuGout.html">
                         <img src="./assets/laPalette.jpg" alt="resto1" />
+
                         <div class="titleHeart">
                             <h3>La palette du goût</h3>
                     </a>
@@ -125,7 +129,7 @@
             </div>
         </section>
     </main>
-    <!--FOOTER-->
+    <!--........................FOOTER........................-->
     <footer>
         <nav id="Ohmyfood">
             <a href="#">
