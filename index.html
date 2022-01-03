@@ -46,84 +46,87 @@
         <!--.............Bloc fonctionnement................-->
         <section id="function">
             <h2>Fonctionnement</h2>
-            <div class="bloc 1">
-                <span class="number">1</span>
-                <i class="fas fa-mobile-alt"></i>
-                <p>Choisissez un restaurant</p>
-            </div>
-            <div class="bloc 2">
-                <span class="number">2</span>
-                <i class="fas fa-list"></i>
-                <p>Composez votre menu</p>
-            </div>
-            <div class="bloc 3">
-                <span class="number">3</span>
-                <i class="fas fa-store"></i>
-                <p>Dégustez au restaurant</p>
+            <div class="blocFunction">
+                <div class="bloc 1">
+                    <span class="number">1</span>
+                    <i class="fas fa-mobile-alt"></i>
+                    <p>Choisissez un restaurant</p>
+                </div>
+                <div class="bloc 2">
+                    <span class="number">2</span>
+                    <i class="fas fa-list"></i>
+                    <p>Composez votre menu</p>
+                </div>
+                <div class="bloc 3">
+                    <span class="number">3</span>
+                    <i class="fas fa-store"></i>
+                    <p>Dégustez au restaurant</p>
+                </div>
             </div>
         </section>
 
         <!--................Bloc restaurants....................-->
         <section id="etablissements">
             <h2>Restaurants</h2>
+            <div class="blocRestau">
+                <div class="restaurent 1" id="laPalette">
+                    <div class="abcd">
+                        <div class="btn__card">
+                            <span class="new"> Nouveau </span>
+                        </div>
+                        <a href="./laPaletteDuGout.html">
+                            <img src="./assets/laPalette.jpg" alt="resto1" />
 
-            <div class="restaurent 1" id="laPalette">
-                <div class="abcd">
-                    <div class="btn__card">
-                        <span class="new"> Nouveau </span>
+                            <div class="titleHeart">
+                                <h3>La palette du goût</h3>
+
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </a>
+                        <p>Ménilmontant</p>
                     </div>
-                    <a href="./laPaletteDuGout.html">
-                        <img src="./assets/laPalette.jpg" alt="resto1" />
-
-                        <div class="titleHeart">
-                            <h3>La palette du goût</h3>
-
-                            <i class="fas fa-heart"></i>
-                        </div>
-                    </a>
-                    <p>Ménilmontant</p>
                 </div>
-            </div>
-            <div class="restaurent 2" id="laNote">
-                <div class="abcd">
-                    <div class="btn__card">
-                        <span class="new"> Nouveau </span>
+                <div class="restaurent 2" id="laNote">
+                    <div class="abcd">
+                        <div class="btn__card">
+                            <span class="new"> Nouveau </span>
+                        </div>
+                        <a href="./laNoteEnchantee.html">
+                            <img src="./assets/laNote.jpg" alt="resto2" />
+                            <div class="titleHeart">
+                                <h3>La note enchantée</h3>
+
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </a>
+                        <p>Charonne</p>
                     </div>
-                    <a href="./laNoteEnchantee.html">
-                        <img src="./assets/laNote.jpg" alt="resto2" />
-                        <div class="titleHeart">
-                            <h3>La note enchantée</h3>
-
-                            <i class="fas fa-heart"></i>
-                        </div>
-                    </a>
-                    <p>Charonne</p>
                 </div>
-            </div>
-            <div class="restaurent 3" id="aLaFrancaise">
-                <div class="abcd">
-                    <a href="./aLaFrancaise.html">
-                        <img src="./assets/aLaFr.jpg" alt="resto3" />
-                        <div class="titleHeart">
-                            <h3>À la française</h3>
+                <div class="restaurent 3" id="aLaFrancaise">
+                    <div class="abcd">
+                        <a href="./aLaFrancaise.html">
+                            <img src="./assets/aLaFr.jpg" alt="resto3" />
+                            <div class="titleHeart">
+                                <h3>À la française</h3>
 
-                            <i class="fas fa-heart"></i>
-                        </div>
-                    </a>
-                    <p>Cité Rouge</p>
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </a>
+                        <p>Cité Rouge</p>
+                    </div>
                 </div>
-            </div>
-            <div class="restaurent 4" id="leDelice">
-                <div class="abcd">
-                    <a href="./leDeliceDesSens.html">
-                        <img src="./assets/leDelice.jpg" alt="resto4" />
-                        <div class="titleHeart">
-                            <h3>Le délice des sens</h3>
+                <div class="restaurent 4" id="leDelice">
+                    <div class="abcd">
+                        <a href="./leDeliceDesSens.html">
+                            <img src="./assets/leDelice.jpg" alt="resto4" />
+                            <div class="titleHeart">
+                                <h3>Le délice des sens</h3>
 
-                            <i class="fas fa-heart"></i>
-                        </div>
-                    </a>
-                    <p>Folie-Méricourt</p>
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </a>
+                        <p>Folie-Méricourt</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -134,16 +137,18 @@
             <a href="#">
                 <h3>ohmyfood</h3>
             </a>
-            <p>
-                <i class="fas fa-utensils"></i>
-                <a href="#"> Proposer un restaurant</a>
-            </p>
-            <p>
-                <i class="fas fa-hands-helping"></i>
-                <a href="#">Devenir partenaire</a>
-            </p>
-            <p><a href="#">Mentions légales</a></p>
-            <p><a href="mailto:exemple@gmail.com">Contact</a></p>
+            <div class="navFooter">
+                <p>
+                    <i class="fas fa-utensils"></i>
+                    <a href="#"> Proposer un restaurant</a>
+                </p>
+                <p>
+                    <i class="fas fa-hands-helping"></i>
+                    <a href="#">Devenir partenaire</a>
+                </p>
+                <p><a href="#">Mentions légales</a></p>
+                <p><a href="mailto:exemple@gmail.com">Contact</a></p>
+            </div>
         </nav>
     </footer>
 </body>

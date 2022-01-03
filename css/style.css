@@ -164,7 +164,14 @@ footer #Ohmyfood {
 }
 @media screen and (min-width: 1024px) {
   footer #Ohmyfood {
-    width: 50%;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer #Ohmyfood .navFooter {
+    display: flex;
+    justify-content: space-around;
   }
 }
 footer #Ohmyfood h3 {
@@ -206,15 +213,27 @@ main {
   padding-top: 20px;
   width: 100%;
 }
+#function h2 {
+  width: 100%;
+  margin-left: 20px;
+}
+#function .blocFunction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 @media screen and (min-width: 1024px) {
-  #function {
-    width: 50%;
+  #function .blocFunction {
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
-#function .bloc {
+#function .blocFunction .bloc {
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 90%;
   height: auto;
   border: 2px solid #f2f2f2;
   border-radius: 20px;
@@ -223,19 +242,24 @@ main {
   margin-bottom: 30px;
   text-align: center;
 }
-#function .bloc :nth-child(3) {
+#function .blocFunction .bloc :nth-child(3) {
   flex: 2;
 }
-#function .bloc i {
+@media screen and (min-width: 1024px) {
+  #function .blocFunction .bloc {
+    width: 25%;
+  }
+}
+#function .blocFunction .bloc i {
   margin-right: 15px;
 }
-#function .bloc i:hover {
+#function .blocFunction .bloc i:hover {
   color: #9356dc;
 }
-#function .bloc:hover {
+#function .blocFunction .bloc:hover {
   background-color: #dfb7ff;
 }
-#function .bloc .number {
+#function .blocFunction .bloc .number {
   border-radius: 50px;
   padding: 5px 10px 5px 10px;
   background-color: #9356dc;
@@ -251,17 +275,31 @@ main {
 }
 @media screen and (min-width: 1024px) {
   #etablissements {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
   }
 }
-#etablissements h2 {
-  margin-left: 20px;
+@media screen and (min-width: 1024px) {
+  #etablissements h2 {
+    margin-left: 20px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #etablissements .blocRestau {
+    display: flex;
+  }
 }
 #etablissements .restaurent {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  #etablissements .restaurent {
+    width: 25%;
+  }
 }
 #etablissements .restaurent .abcd {
   display: flex;
@@ -271,7 +309,6 @@ main {
   border: 2px solid #f2f2f2;
   background-color: white;
   border-radius: 20px;
-  margin-top: 20px;
   margin-bottom: 20px;
   text-align: left;
 }
@@ -294,20 +331,10 @@ main {
   text-decoration: none;
 }
 #etablissements .restaurent .abcd a img {
-  border-radius: 20px 20px 0 0;
   width: 100%;
   height: 200px;
-}
-@media screen and (min-width: 768px) {
-  #etablissements .restaurent .abcd a img {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #etablissements .restaurent .abcd a img {
-    width: 100%;
-    height: 300px;
-  }
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
 }
 #etablissements .restaurent .abcd a .titleHeart {
   display: flex;
@@ -335,7 +362,7 @@ main {
 }
 
 body {
-  min-height: 100vh;
+  margin: 0;
 }
 body form {
   display: flex;
@@ -380,14 +407,21 @@ body .imgResto {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: fit-content;
+  width: 100%;
 }
 body .imgResto img {
   width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  body .imgResto img {
+    height: 450px;
+  }
 }
 @media screen and (min-width: 1024px) {
   body .imgResto img {
-    width: 50%;
+    height: 650px;
   }
 }
 body .menu {
@@ -404,8 +438,44 @@ body .menu {
 }
 @media screen and (min-width: 1024px) {
   body .menu {
-    width: 50%;
-    margin-top: -180px;
+    margin-top: -50px;
+  }
+}
+body .menu .allMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  body .menu .allMenu {
+    width: 100%;
+  }
+  body .menu .allMenu .entreesMenu {
+    width: 80%;
+  }
+  body .menu .allMenu .platsMenu {
+    width: 80%;
+  }
+  body .menu .allMenu .dessertsMenu {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .menu .allMenu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  body .menu .allMenu .entreesMenu {
+    width: 30%;
+  }
+  body .menu .allMenu .platsMenu {
+    width: 30%;
+  }
+  body .menu .allMenu .dessertsMenu {
+    width: 30%;
   }
 }
 body .menu h2 {
@@ -417,6 +487,7 @@ body .menu h3 {
 }
 @media screen and (min-width: 1024px) {
   body .menu h3 {
+    width: 100%;
     font-size: 24px;
   }
 }
