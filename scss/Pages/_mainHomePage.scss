@@ -75,6 +75,7 @@ main {
     .blocRestau {
         @include desktop {
             display: flex;
+            justify-content: space-between;
         }
     }
     .restaurent {
@@ -83,7 +84,8 @@ main {
         align-items: center;
         width: 100%;
         @include desktop {
-            width: 25%;
+            display: flex;
+            width: 20%;
         }
         .abcd {
             display: flex;
@@ -114,28 +116,90 @@ main {
                 }
                 .titleHeart {
                     display: flex;
-                    justify-content: space-between;
-                    color: black;
+                    flex-direction: column;
                     margin-right: 30px;
+                    color: black;
                     h3 {
                         margin-left: 15px;
                         text-align: left;
                         color: black;
                     }
+                    p {
+                        margin-left: 15px;
+                        color: black;
+                    }
                     i {
                         cursor: pointer;
-                        margin-top: 30px;
-                        &:hover {
-                            -webkit-transform: scale(1.3);
-                            transform: scale(1.3);
-                            color: $color-primary;
-                        }
                     }
                 }
             }
-            p {
-                margin-left: 15px;
-                color: black;
+            #span_1 {
+                @include span_base_heart;
+                #h_1 {
+                    @include heart_full;
+                }
+                #h_2 {
+                    @include heart_empty;
+                }
+                &:hover {
+                    #h_1 {
+                        @include heart_full_hover;
+                    }
+                    #h_2 {
+                        opacity: 0;
+                    }
+                }
+            }
+            #span_2 {
+                @include span_base_heart;
+                #h_3 {
+                    @include heart_full;
+                }
+                #h_4 {
+                    @include heart_empty;
+                }
+                &:hover {
+                    #h_3 {
+                        @include heart_full_hover;
+                    }
+                    #h_4 {
+                        opacity: 0;
+                    }
+                }
+            }
+            #span_3 {
+                @include span_base_heart;
+                #h_5 {
+                    @include heart_full;
+                }
+                #h_6 {
+                    @include heart_empty;
+                }
+                &:hover {
+                    #h_5 {
+                        @include heart_full_hover;
+                    }
+                    #h_6 {
+                        opacity: 0;
+                    }
+                }
+            }
+            #span_4 {
+                @include span_base_heart;
+                #h_7 {
+                    @include heart_full;
+                }
+                #h_8 {
+                    @include heart_empty;
+                }
+                &:hover {
+                    #h_7 {
+                        @include heart_full_hover;
+                    }
+                    #h_8 {
+                        opacity: 0;
+                    }
+                }
             }
         }
     }

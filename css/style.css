@@ -23,6 +23,11 @@ body p {
   font-size: 14px;
 }
 
+/* Mixin Heart*/
+/* Mixin Check-Circle*/
+/*.........NOUVEAU........*/
+/* Mixin Align center*/
+/* Mixin BOUTONS */
 /* La fonction scaleY() modifie l'ordonnée de chaque sommet de l'élément avec un facteur multiplicateur */
 @keyframes grow {
   0%, 100% {
@@ -148,7 +153,7 @@ header .logo {
   width: 40%;
 }
 #blocHead #explore:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 footer {
@@ -288,6 +293,7 @@ main {
 @media screen and (min-width: 1024px) {
   #etablissements .blocRestau {
     display: flex;
+    justify-content: space-between;
   }
 }
 #etablissements .restaurent {
@@ -298,7 +304,8 @@ main {
 }
 @media screen and (min-width: 1024px) {
   #etablissements .restaurent {
-    width: 25%;
+    display: flex;
+    width: 20%;
   }
 }
 #etablissements .restaurent .abcd {
@@ -338,31 +345,137 @@ main {
 }
 #etablissements .restaurent .abcd a .titleHeart {
   display: flex;
-  justify-content: space-between;
-  color: black;
+  flex-direction: column;
   margin-right: 30px;
+  color: black;
 }
 #etablissements .restaurent .abcd a .titleHeart h3 {
   margin-left: 15px;
   text-align: left;
   color: black;
 }
-#etablissements .restaurent .abcd a .titleHeart i {
-  cursor: pointer;
-  margin-top: 30px;
-}
-#etablissements .restaurent .abcd a .titleHeart i:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-  color: #9356dc;
-}
-#etablissements .restaurent .abcd p {
+#etablissements .restaurent .abcd a .titleHeart p {
   margin-left: 15px;
   color: black;
 }
+#etablissements .restaurent .abcd a .titleHeart i {
+  cursor: pointer;
+}
+#etablissements .restaurent .abcd #span_1 {
+  position: relative;
+  bottom: 55px;
+  font-size: 22px;
+}
+#etablissements .restaurent .abcd #span_1 #h_1 {
+  opacity: 0;
+  background-color: white;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: 1.5rem;
+  margin-left: 90%;
+  transition: opacity 2s;
+}
+#etablissements .restaurent .abcd #span_1 #h_2 {
+  width: 1.5rem;
+  margin-left: 90%;
+  color: #353535;
+}
+#etablissements .restaurent .abcd #span_1:hover #h_1 {
+  opacity: 1;
+  background-image: linear-gradient(to top right, #fca2f7, #9356dc);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#etablissements .restaurent .abcd #span_1:hover #h_2 {
+  opacity: 0;
+}
+#etablissements .restaurent .abcd #span_2 {
+  position: relative;
+  bottom: 55px;
+  font-size: 22px;
+}
+#etablissements .restaurent .abcd #span_2 #h_3 {
+  opacity: 0;
+  background-color: white;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: 1.5rem;
+  margin-left: 90%;
+  transition: opacity 2s;
+}
+#etablissements .restaurent .abcd #span_2 #h_4 {
+  width: 1.5rem;
+  margin-left: 90%;
+  color: #353535;
+}
+#etablissements .restaurent .abcd #span_2:hover #h_3 {
+  opacity: 1;
+  background-image: linear-gradient(to top right, #fca2f7, #9356dc);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#etablissements .restaurent .abcd #span_2:hover #h_4 {
+  opacity: 0;
+}
+#etablissements .restaurent .abcd #span_3 {
+  position: relative;
+  bottom: 55px;
+  font-size: 22px;
+}
+#etablissements .restaurent .abcd #span_3 #h_5 {
+  opacity: 0;
+  background-color: white;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: 1.5rem;
+  margin-left: 90%;
+  transition: opacity 2s;
+}
+#etablissements .restaurent .abcd #span_3 #h_6 {
+  width: 1.5rem;
+  margin-left: 90%;
+  color: #353535;
+}
+#etablissements .restaurent .abcd #span_3:hover #h_5 {
+  opacity: 1;
+  background-image: linear-gradient(to top right, #fca2f7, #9356dc);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#etablissements .restaurent .abcd #span_3:hover #h_6 {
+  opacity: 0;
+}
+#etablissements .restaurent .abcd #span_4 {
+  position: relative;
+  bottom: 55px;
+  font-size: 22px;
+}
+#etablissements .restaurent .abcd #span_4 #h_7 {
+  opacity: 0;
+  background-color: white;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: 1.5rem;
+  margin-left: 90%;
+  transition: opacity 2s;
+}
+#etablissements .restaurent .abcd #span_4 #h_8 {
+  width: 1.5rem;
+  margin-left: 90%;
+  color: #353535;
+}
+#etablissements .restaurent .abcd #span_4:hover #h_7 {
+  opacity: 1;
+  background-image: linear-gradient(to top right, #fca2f7, #9356dc);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#etablissements .restaurent .abcd #span_4:hover #h_8 {
+  opacity: 0;
+}
 
 body {
-  margin: 0;
+  margin: auto;
 }
 body form {
   display: flex;
@@ -379,7 +492,7 @@ body form .btnAccueil {
   width: 70%;
 }
 body form .btnAccueil:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 @media screen and (min-width: 1024px) {
   body form .btnAccueil {
@@ -396,7 +509,7 @@ body form .btnCommander {
   width: 70%;
 }
 body form .btnCommander:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 @media screen and (min-width: 1024px) {
   body form .btnCommander {
@@ -407,7 +520,7 @@ body .imgResto {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 99%;
 }
 body .imgResto img {
   width: 100%;
@@ -429,7 +542,7 @@ body .menu {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 99%;
   border: 2px solid #dcdcdc;
   border-radius: 60px 60px 0 0;
   box-shadow: 8px 8px 12px #cfcdcd;
@@ -500,6 +613,8 @@ body .menu p {
   }
 }
 
+/*................. HEART................*/
+/*..........MENU..........*/
 .imgResto img {
   width: 50%;
 }

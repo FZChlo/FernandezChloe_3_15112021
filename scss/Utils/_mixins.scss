@@ -1,3 +1,37 @@
+/* Mixin Heart*/
+
+@mixin span_base_heart {
+    position: relative;
+    bottom: 55px;
+    font-size: 22px;
+}
+
+@mixin heart_full {
+    opacity: 0;
+    background-color: white;
+    -webkit-background-clip: text;
+    color: transparent;
+    width: 1.5rem;
+    margin-left: 90%;
+    transition: opacity 2s;
+}
+
+@mixin heart_full_hover {
+    opacity: 1;
+    background-image: $bckg-heart;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin heart_empty {
+    width: 1.5rem;
+    margin-left: 90%;
+    color: $color-p;
+}
+
+
+/* Mixin Check-Circle*/
+
 @mixin elements {
     background-color: white;
     border-radius: 15px;
@@ -21,6 +55,9 @@
         transform: rotate(360deg);
     }
 }
+
+
+/*.........NOUVEAU........*/
 
 @mixin btn-card {
     color: #008766;
@@ -53,11 +90,17 @@
     }
 }
 
+
+/* Mixin Align center*/
+
 @mixin alignCenter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
+/* Mixin BOUTONS */
 
 @mixin button {
     color: white;
@@ -67,7 +110,7 @@
     height: 50px;
     font-weight: bold;
     &:hover {
-        opacity: 0.5;
+        opacity: 0.8;
     }
 }
 
