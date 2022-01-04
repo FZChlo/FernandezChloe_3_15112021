@@ -93,22 +93,48 @@ body p {
     z-index: -1;
   }
 }
-header {
+/* Header Pages*/
+#header_other div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#header_other div i {
+  color: black;
+}
+#header_other div a {
+  position: absolute;
+  left: 1rem;
+}
+#header_other div img {
+  width: 70%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 1024px) {
+  #header_other div img {
+    width: 100%;
+  }
+}
+
+/* Header Index*/
+#header_index {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-header .logo {
-  width: 50%;
+#header_index img {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 @media screen and (min-width: 1024px) {
-  header .logo {
-    width: 80%;
+  #header_index img {
+    width: 90%;
   }
 }
-
-#blocHead {
+#header_index #blocHead {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,12 +146,12 @@ header .logo {
   padding-bottom: 30px;
 }
 @media screen and (min-width: 1024px) {
-  #blocHead {
+  #header_index #blocHead {
     width: 50%;
     text-align: center;
   }
 }
-#blocHead .searchSection {
+#header_index #blocHead .searchSection {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,14 +162,20 @@ header .logo {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-#blocHead .searchSection #search {
+#header_index #blocHead .searchSection #search {
+  text-align: center;
   background-color: #dcdcdc;
   border: none;
   color: black;
   font-weight: bold;
   font-size: 14px;
 }
-#blocHead #explore {
+#header_index #blocHead p,
+#header_index #blocHead h1 {
+  display: flex;
+  text-align: center;
+}
+#header_index #blocHead #explore {
   color: white;
   border: 2px solid #f2f2f2;
   background-image: linear-gradient(to left, #9356dc, #ff79da);
@@ -152,7 +184,7 @@ header .logo {
   font-weight: bold;
   width: 40%;
 }
-#blocHead #explore:hover {
+#header_index #blocHead #explore:hover {
   opacity: 0.8;
 }
 
@@ -174,6 +206,12 @@ footer #Ohmyfood {
   }
 }
 @media screen and (min-width: 1024px) {
+  footer #Ohmyfood .navFooter {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 768px) {
   footer #Ohmyfood .navFooter {
     display: flex;
     justify-content: space-around;
@@ -214,6 +252,7 @@ main {
   flex-direction: column;
 }
 
+/* Bloc Fonctionnement */
 #function {
   padding-top: 20px;
   width: 100%;
@@ -273,6 +312,7 @@ main {
   margin-right: 10px;
 }
 
+/* Bloc Etablissements */
 #etablissements {
   width: 100%;
   border: 2px solid #f2f2f2;
@@ -284,23 +324,32 @@ main {
     flex-direction: column;
   }
 }
+#etablissements h2 {
+  margin-left: 20px;
+}
 @media screen and (min-width: 1024px) {
   #etablissements h2 {
-    margin-left: 20px;
     width: 100%;
   }
+}
+#etablissements .blocRestau {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 @media screen and (min-width: 1024px) {
   #etablissements .blocRestau {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: row;
   }
 }
 #etablissements .restaurent {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 90%;
 }
 @media screen and (min-width: 1024px) {
   #etablissements .restaurent {
@@ -318,6 +367,7 @@ main {
   border-radius: 20px;
   margin-bottom: 20px;
   text-align: left;
+  /* .................... Animation Coeur .................... */
 }
 #etablissements .restaurent .abcd .btn__card {
   display: flex;
@@ -554,43 +604,6 @@ body .menu {
     margin-top: -50px;
   }
 }
-body .menu .allMenu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-@media screen and (min-width: 768px) {
-  body .menu .allMenu {
-    width: 100%;
-  }
-  body .menu .allMenu .entreesMenu {
-    width: 80%;
-  }
-  body .menu .allMenu .platsMenu {
-    width: 80%;
-  }
-  body .menu .allMenu .dessertsMenu {
-    width: 80%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  body .menu .allMenu {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-  }
-  body .menu .allMenu .entreesMenu {
-    width: 30%;
-  }
-  body .menu .allMenu .platsMenu {
-    width: 30%;
-  }
-  body .menu .allMenu .dessertsMenu {
-    width: 30%;
-  }
-}
 body .menu h2 {
   text-decoration: underline #99e2d0 5px;
 }
@@ -613,25 +626,39 @@ body .menu p {
   }
 }
 
-/*................. HEART................*/
-/*..........MENU..........*/
+/*..........Animation Menu ..........*/
 .imgResto img {
   width: 50%;
 }
 
 .entreesMenu {
-  animation: fadein 4s ease-in-out;
+  animation: fadein 2s ease-in-out;
   width: 90%;
+}
+@media screen and (min-width: 1024px) {
+  .entreesMenu {
+    width: 50%;
+  }
 }
 
 .platsMenu {
-  animation: fadein 8s ease-in-out;
+  animation: fadein 6s ease-in-out;
   width: 90%;
+}
+@media screen and (min-width: 1024px) {
+  .platsMenu {
+    width: 50%;
+  }
 }
 
 .dessertsMenu {
-  animation: fadein 12s ease-in-out;
+  animation: fadein 10s ease-in-out;
   width: 90%;
+}
+@media screen and (min-width: 1024px) {
+  .dessertsMenu {
+    width: 50%;
+  }
 }
 
 .icon {

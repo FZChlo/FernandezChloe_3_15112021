@@ -46,39 +46,6 @@ body {
         @include desktop {
             margin-top: -50px;
         }
-        .allMenu {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            @include tablet {
-                width: 100%;
-                .entreesMenu {
-                    width: 80%;
-                }
-                .platsMenu {
-                    width: 80%;
-                }
-                .dessertsMenu {
-                    width: 80%;
-                }
-            }
-            @include desktop {
-                width: 100%;
-                display: flex;
-                justify-content: space-around;
-                flex-direction: row;
-                .entreesMenu {
-                    width: 30%;
-                }
-                .platsMenu {
-                    width: 30%;
-                }
-                .dessertsMenu {
-                    width: 30%;
-                }
-            }
-        }
         h2 {
             text-decoration: underline $color-tertiary 5px;
         }

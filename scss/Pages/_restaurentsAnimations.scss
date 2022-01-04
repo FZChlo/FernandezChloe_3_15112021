@@ -1,7 +1,4 @@
-/*................. HEART................*/
-
-
-/*..........MENU..........*/
+/*..........Animation Menu ..........*/
 
 .imgResto {
     img {
@@ -10,18 +7,27 @@
 }
 
 .entreesMenu {
-    animation: fadein 4s ease-in-out;
+    animation: fadein 2s ease-in-out;
     width: 90%;
+    @include desktop {
+        width: 50%;
+    }
 }
 
 .platsMenu {
-    animation: fadein 8s ease-in-out;
+    animation: fadein 6s ease-in-out;
     width: 90%;
+    @include desktop {
+        width: 50%;
+    }
 }
 
 .dessertsMenu {
-    animation: fadein 12s ease-in-out;
+    animation: fadein 10s ease-in-out;
     width: 90%;
+    @include desktop {
+        width: 50%;
+    }
 }
 
 .icon {

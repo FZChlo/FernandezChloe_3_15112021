@@ -3,6 +3,9 @@ main {
     flex-direction: column;
 }
 
+
+/* Bloc Fonctionnement */
+
 #function {
     padding-top: 20px;
     width: 100%;
@@ -58,6 +61,9 @@ main {
     }
 }
 
+
+/* Bloc Etablissements */
+
 #etablissements {
     width: 100%;
     border: 2px solid $color-lightGrey;
@@ -67,22 +73,27 @@ main {
         flex-direction: column;
     }
     h2 {
+        margin-left: 20px;
         @include desktop {
-            margin-left: 20px;
             width: 100%;
         }
     }
     .blocRestau {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         @include desktop {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
+            flex-direction: row;
         }
     }
     .restaurent {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 90%;
         @include desktop {
             display: flex;
             width: 20%;
@@ -133,6 +144,7 @@ main {
                     }
                 }
             }
+            /* .................... Animation Coeur .................... */
             #span_1 {
                 @include span_base_heart;
                 #h_1 {
