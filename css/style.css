@@ -606,11 +606,21 @@ body .menu {
 }
 body .menu .titreMenu {
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
+  width: 90%;
+}
+@media screen and (min-width: 1024px) {
+  body .menu .titreMenu {
+    justify-content: center;
+  }
+}
+body .menu .titreMenu h1 {
+  margin-top: 30px;
+  margin-left: 5px;
 }
 body .menu .titreMenu #span_5 {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   font-size: 20px;
 }
 @media screen and (min-width: 1024px) {
@@ -624,12 +634,12 @@ body .menu .titreMenu #span_5 #h_9 {
   -webkit-background-clip: text;
   color: transparent;
   width: 1.5rem;
-  margin-left: 90%;
+  margin-left: 80%;
   transition: opacity 2s;
 }
 body .menu .titreMenu #span_5 #h_10 {
   width: 1.5rem;
-  margin-left: 90%;
+  margin-left: 80%;
   color: #353535;
 }
 body .menu .titreMenu #span_5:hover #h_9 {

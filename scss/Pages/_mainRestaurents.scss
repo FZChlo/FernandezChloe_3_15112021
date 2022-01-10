@@ -48,19 +48,27 @@ body {
         }
         .titreMenu {
             display: flex;
-            justify-content: left;
+            justify-content: space-between;
             align-items: center;
+            width: 90%;
+            @include desktop {
+                justify-content: center;
+            }
+            h1 {
+                margin-top: 30px;
+                margin-left: 5px;
+            }
             #span_5 {
-                padding-bottom: 20px;
+                padding-bottom: 10px;
                 font-size: 20px;
                 @include desktop {
                     font-size: 22px;
                 }
                 #h_9 {
-                    @include heart_full;
+                    @include heart_full_2;
                 }
                 #h_10 {
-                    @include heart_empty;
+                    @include heart_empty_2;
                 }
                 &:hover {
                     #h_9 {

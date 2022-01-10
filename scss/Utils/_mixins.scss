@@ -16,6 +16,16 @@
     transition: opacity 2s;
 }
 
+@mixin heart_full_2 {
+    opacity: 0;
+    background-color: white;
+    -webkit-background-clip: text;
+    color: transparent;
+    width: 1.5rem;
+    margin-left: 80%;
+    transition: opacity 2s;
+}
+
 @mixin heart_full_hover {
     opacity: 1;
     background-image: $bckg-heart;
@@ -26,6 +36,12 @@
 @mixin heart_empty {
     width: 1.5rem;
     margin-left: 90%;
+    color: $color-p;
+}
+
+@mixin heart_empty_2 {
+    width: 1.5rem;
+    margin-left: 80%;
     color: $color-p;
 }
 
