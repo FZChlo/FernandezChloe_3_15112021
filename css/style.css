@@ -10,7 +10,7 @@ body h6 {
   font-style: italic;
 }
 body h1 {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
 }
 body h2 {
@@ -603,6 +603,43 @@ body .menu {
   body .menu {
     margin-top: -50px;
   }
+}
+body .menu .titreMenu {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+body .menu .titreMenu #span_5 {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+@media screen and (min-width: 1024px) {
+  body .menu .titreMenu #span_5 {
+    font-size: 22px;
+  }
+}
+body .menu .titreMenu #span_5 #h_9 {
+  opacity: 0;
+  background-color: white;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: 1.5rem;
+  margin-left: 90%;
+  transition: opacity 2s;
+}
+body .menu .titreMenu #span_5 #h_10 {
+  width: 1.5rem;
+  margin-left: 90%;
+  color: #353535;
+}
+body .menu .titreMenu #span_5:hover #h_9 {
+  opacity: 1;
+  background-image: linear-gradient(to top right, #fca2f7, #9356dc);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+body .menu .titreMenu #span_5:hover #h_10 {
+  opacity: 0;
 }
 body .menu h2 {
   text-decoration: underline #99e2d0 5px;

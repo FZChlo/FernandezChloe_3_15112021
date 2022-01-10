@@ -46,6 +46,32 @@ body {
         @include desktop {
             margin-top: -50px;
         }
+        .titreMenu {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            #span_5 {
+                padding-bottom: 20px;
+                font-size: 20px;
+                @include desktop {
+                    font-size: 22px;
+                }
+                #h_9 {
+                    @include heart_full;
+                }
+                #h_10 {
+                    @include heart_empty;
+                }
+                &:hover {
+                    #h_9 {
+                        @include heart_full_hover;
+                    }
+                    #h_10 {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
         h2 {
             text-decoration: underline $color-tertiary 5px;
         }
